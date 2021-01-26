@@ -1,0 +1,44 @@
+@mixin d_flex{
+  display: flex;
+}
+@mixin align_center{
+  align-items: center;
+}
+@mixin just_between{
+  justify-content: space-between;
+}
+@mixin reset{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin container{
+  margin: 0 10%;
+}
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  @include reset;
+}
+li{
+  list-style: none;
+  a{
+    text-decoration: none;
+  }
+}
+
+// media query
+@media screen and (min-width: 998px){
+  .mobile-menu {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 997px){
+  header{
+    
+  }
+  .nav_right{
+    visibility: hidden;
+  }
+  
+}

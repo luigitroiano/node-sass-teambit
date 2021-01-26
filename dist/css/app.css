@@ -1,1 +1,73 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 998px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 997px) {
+  .nav_right {
+    visibility: hidden;
+  }
+}
+header .container {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 5px 0;
+  border-bottom: 1px solid black;
+}
+header .nav_left {
+  display: flex;
+  align-items: center;
+}
+header .nav_right {
+  display: flex;
+  align-items: center;
+}
+header .nav_right ul li a {
+  color: black;
+  margin-right: 30px;
+  font-weight: 600;
+}
+header .nav_right ul li a:hover {
+  color: #2C4792;
+}
+header .nav_right button {
+  display: flex;
+  align-items: center;
+  color: #2C4792;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid #2C4792;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+header .nav_right button:hover {
+  background-color: #2C4792;
+  color: white;
+}
+header .nav_right button img {
+  width: 25px;
+  margin-right: 5px;
+}
+header .mobile-menu {
+  padding-right: 20px;
+  width: 1.2em;
+}
+header .mobile-menu .menu-icon {
+  font-size: 4em;
+  cursor: pointer;
+}

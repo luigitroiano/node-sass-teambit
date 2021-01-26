@@ -1,0 +1,56 @@
+header{
+
+  .container{
+    @include container;
+    @include d_flex;
+    @include just_between;
+    padding: 15px 0 5px 0;
+    border-bottom: 1px solid black;
+  }
+  .nav_left{
+    @include d_flex;
+      @include align_center;
+  }
+  .nav_right{
+    @include d_flex;
+    @include align_center;
+    ul{
+      li{
+        a{
+          color: $color_link_menu;
+          margin-right: 30px;
+          font-weight: 600;
+          &:hover{
+            color: $color_blue;
+          }
+        }
+      }
+    }
+    button{
+      @include d_flex;
+      @include align_center;
+      color: $color_blue;
+      font-weight: 600;
+      background-color: white;
+      border: 1px solid $color_blue;
+      border-radius: 5px;
+      padding: 10px 15px;
+      &:hover{
+        background-color: $color_blue;
+        color: white;
+      }
+      img{
+        width: 25px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .mobile-menu{
+    padding-right: 20px;
+    width: 1.2em;
+    .menu-icon {
+      font-size: 4em;
+      cursor: pointer;
+    }
+  }
+}
