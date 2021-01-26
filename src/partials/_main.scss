@@ -1,0 +1,60 @@
+#jumbotron{
+  height: calc(100vh - 75px);
+  .container{
+    @include container;
+    @include d_flex;
+    .jumbo_text{
+      width: 50%;
+      height: inherit;
+      h1{
+        margin: 70px 0 10px 0;
+      }
+      p{
+        margin: 5px 0;
+      }
+      .jumbo_btns{
+        @include d_flex;
+        @include align_center;
+        margin: 60px 0 30px 0;
+        button{
+          @include d_flex;
+          @include align_center;
+          @include btn;
+          background-color: $color_blue;
+          padding: 5px 10px;
+          color: white;
+          &:hover{
+            background-color: white;
+            color: $color_blue;
+          }
+          img{
+            width: 25px;
+            margin-right: 5px;
+          }
+        }
+        span{
+          margin: 0 5px;
+        }
+      }
+      .email{
+        a{
+          color: black;
+          &:hover{
+            color: $color_blue;
+            font-weight: 900;
+          }
+        }
+        
+      }
+    }
+    .jumbo_img{
+      width: 50%;
+      height: inherit;
+      img{
+        width: 100%;
+        margin-top: 70px;
+      }
+    
+    }
+  }
+}

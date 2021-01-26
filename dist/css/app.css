@@ -8,8 +8,17 @@ body {
 li {
   list-style: none;
 }
-li a {
+
+a {
   text-decoration: none;
+}
+
+.font_size_54 {
+  font-size: 54px;
+}
+
+.font_size_22 {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 998px) {
@@ -50,9 +59,9 @@ header .nav_right button {
   align-items: center;
   color: #2C4792;
   font-weight: 600;
-  background-color: white;
   border: 1px solid #2C4792;
   border-radius: 5px;
+  background-color: white;
   padding: 10px 15px;
 }
 header .nav_right button:hover {
@@ -70,4 +79,64 @@ header .mobile-menu {
 header .mobile-menu .menu-icon {
   font-size: 4em;
   cursor: pointer;
+}
+
+#jumbotron {
+  height: calc(100vh - 75px);
+}
+#jumbotron .container {
+  margin: 0 10%;
+  display: flex;
+}
+#jumbotron .container .jumbo_text {
+  width: 50%;
+  height: inherit;
+}
+#jumbotron .container .jumbo_text h1 {
+  margin: 70px 0 10px 0;
+}
+#jumbotron .container .jumbo_text p {
+  margin: 5px 0;
+}
+#jumbotron .container .jumbo_text .jumbo_btns {
+  display: flex;
+  align-items: center;
+  margin: 60px 0 30px 0;
+}
+#jumbotron .container .jumbo_text .jumbo_btns button {
+  display: flex;
+  align-items: center;
+  color: #2C4792;
+  font-weight: 600;
+  border: 1px solid #2C4792;
+  border-radius: 5px;
+  background-color: #2C4792;
+  padding: 5px 10px;
+  color: white;
+}
+#jumbotron .container .jumbo_text .jumbo_btns button:hover {
+  background-color: white;
+  color: #2C4792;
+}
+#jumbotron .container .jumbo_text .jumbo_btns button img {
+  width: 25px;
+  margin-right: 5px;
+}
+#jumbotron .container .jumbo_text .jumbo_btns span {
+  margin: 0 5px;
+}
+#jumbotron .container .jumbo_text .email a {
+  color: black;
+}
+#jumbotron .container .jumbo_text .email a:hover {
+  color: #2C4792;
+  font-weight: 900;
+}
+#jumbotron .container .jumbo_img {
+  width: 50%;
+  height: inherit;
+}
+#jumbotron .container .jumbo_img img {
+  width: 100%;
+  margin-top: 70px;
 }
