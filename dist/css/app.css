@@ -119,13 +119,14 @@ header .mobile-menu .menu-icon {
   font-weight: 600;
   border: 1px solid #2C4792;
   border-radius: 5px;
-  background-color: #2C4792;
+  background-color: #922C2C;
+  border-color: #922C2C;
   padding: 5px 10px;
   color: white;
 }
 #jumbotron .container .jumbo_text .btns button:hover {
   background-color: white;
-  color: #2C4792;
+  color: #922C2C;
 }
 #jumbotron .container .jumbo_text .btns button img {
   width: 25px;
@@ -135,10 +136,10 @@ header .mobile-menu .menu-icon {
   margin: 0 5px;
 }
 #jumbotron .container .jumbo_text .email a {
-  color: black;
+  color: #922C2C;
 }
 #jumbotron .container .jumbo_text .email a:hover {
-  color: #2C4792;
+  color: #922C2C;
   font-weight: 900;
 }
 #jumbotron .container .jumbo_img {
@@ -151,7 +152,7 @@ header .mobile-menu .menu-icon {
 }
 
 #process, #solution {
-  background-color: #FFE7D2;
+  background-color: #93C7D0;
 }
 #process .container, #solution .container {
   margin: 0 10%;
@@ -196,7 +197,7 @@ header .mobile-menu .menu-icon {
   padding-bottom: 80px;
 }
 #process .border_bottom, #solution .border_bottom {
-  border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 #feedback, #survey, #review, #praise {
@@ -237,7 +238,7 @@ header .mobile-menu .menu-icon {
 #get_started {
   margin-top: 100px;
   padding-bottom: 60px;
-  background-color: #FFE7D2;
+  background-color: #93C7D0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,8 +262,15 @@ header .mobile-menu .menu-icon {
   line-height: 100%;
   margin: auto 0;
 }
-#get_started .change_color {
+#get_started .color_blue {
   color: #2C4792;
+}
+#get_started .email a {
+  color: #922C2C;
+}
+#get_started .email a:hover {
+  color: #922C2C;
+  font-weight: 900;
 }
 #get_started .quote_icon {
   position: absolute;
@@ -283,13 +291,14 @@ header .mobile-menu .menu-icon {
   font-weight: 600;
   border: 1px solid #2C4792;
   border-radius: 5px;
-  background-color: #2C4792;
+  background-color: #922C2C;
+  border-color: #922C2C;
   padding: 5px 10px;
   color: white;
 }
 #get_started .btns button:hover {
   background-color: white;
-  color: #2C4792;
+  color: #922C2C;
 }
 #get_started .btns button img {
   width: 25px;

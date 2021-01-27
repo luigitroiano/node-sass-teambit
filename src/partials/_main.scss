@@ -21,12 +21,13 @@
           @include d_flex;
           @include align_center;
           @include btn;
-          background-color: $color_blue;
+          background-color: $color_bordeaux;
+          border-color: $color_bordeaux;
           padding: 5px 10px;
           color: white;
           &:hover{
             background-color: white;
-            color: $color_blue;
+            color: $color_bordeaux;
           }
           img{
             width: 25px;
@@ -39,9 +40,9 @@
       }
       .email{
         a{
-          color: black;
+          color: $color_bordeaux;
           &:hover{
-            color: $color_blue;
+            color: $color_bordeaux;
             font-weight: 900;
           }
         }
@@ -62,7 +63,7 @@
 // section process & solution
 #process, #solution{
   //height: 150vh;
-  background-color: $color_pink;
+  background-color: $color_bg;
   .container{
     @include container;
     padding: 0 0 50px 0;
@@ -108,7 +109,7 @@
     }
   }
   .border_bottom{
-    border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
   }
 }
 // section feedback, survey, review, praise
@@ -149,7 +150,7 @@
 #get_started{
   margin-top: 100px;
   padding-bottom: 60px;
-  background-color: $color_pink;
+  background-color: $color_bg;
   @include d_flex;
   flex-direction: column;
   align-items: center;
@@ -172,8 +173,17 @@
       }
     }
   }
-  .change_color{
+  .color_blue{
     color: $color_blue;
+  }
+  .email{
+    a{
+      color: $color_bordeaux;
+      &:hover{
+        color: $color_bordeaux;
+        font-weight: 900;
+      }
+    }
   }
   .quote_icon{
     position: absolute;
@@ -190,12 +200,13 @@
           @include d_flex;
           @include align_center;
           @include btn;
-          background-color: $color_blue;
+          background-color: $color_bordeaux;
+          border-color: $color_bordeaux;
           padding: 5px 10px;
           color: white;
           &:hover{
             background-color: white;
-            color: $color_blue;
+            color: $color_bordeaux;
           }
           img{
             width: 25px;
