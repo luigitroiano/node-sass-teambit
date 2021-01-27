@@ -151,12 +151,11 @@ header .mobile-menu .menu-icon {
 }
 
 #process, #solution {
-  height: 150vh;
   background-color: #FFE7D2;
 }
 #process .container, #solution .container {
   margin: 0 10%;
-  padding: 0 0 140px 0;
+  padding: 0 0 50px 0;
 }
 #process .container .row1 h2, #process .container .row4 h2, #solution .container .row1 h2, #solution .container .row4 h2 {
   width: 60%;
@@ -194,7 +193,43 @@ header .mobile-menu .menu-icon {
 }
 #process .container .row3 img, #solution .container .row3 img {
   height: 300px;
+  padding-bottom: 80px;
 }
 #process .border_bottom, #solution .border_bottom {
   border-bottom: 2px solid rgba(170, 170, 170, 0.5);
+}
+
+#feedback, #survey, #review, #praise {
+  margin-top: 50px;
+  display: flex;
+}
+#feedback h2, #survey h2, #review h2, #praise h2 {
+  font-size: 30px;
+  margin: 5px 0 50px 0;
+}
+#feedback p, #feedback a, #survey p, #survey a, #review p, #review a, #praise p, #praise a {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#feedback a, #survey a, #review a, #praise a {
+  color: #2C4792;
+  margin-bottom: 20px;
+  display: block;
+}
+#feedback .screenshot, #survey .screenshot, #review .screenshot, #praise .screenshot {
+  width: 50%;
+}
+#feedback .screenshot img, #survey .screenshot img, #review .screenshot img, #praise .screenshot img {
+  width: 100%;
+  height: 65%;
+}
+#feedback .details, #survey .details, #review .details, #praise .details {
+  width: 20%;
+}
+#feedback .details img, #survey .details img, #review .details img, #praise .details img {
+  width: 100%;
+}
+
+#survey, #praise {
+  flex-direction: row-reverse;
 }
