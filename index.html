@@ -194,11 +194,23 @@
           </div>
           <p class="email">or use your <a class="change_color" href="#">email address <i class="fas fa-arrow-right"></i></a></p>
         </section>
-      
       </main>
       <!-- ------FOOTER------ -->
       <footer>
-      
+        <div class="container">
+          <div class="footer_info">
+            <div class="footer_logo">
+              <img src="./dist/img/logo-small.svg" alt="img">
+            </div>
+            <p><span class="change_style">Teambit</span> helps teams create high performing cultures by making feedback a daily habit.</p>
+          </div>
+          <div class="footer_card" v-for="(card,index) in footerLink">
+            <h3 >{{card.label}}</h3>
+            <ul>
+              <li v-for="(link,index) in card.downMenu"><a :href=`${link.url}`>{{link.name}}</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
       

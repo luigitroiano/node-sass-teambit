@@ -1,0 +1,47 @@
+footer{
+  .container{
+    @include container;
+    @include d_flex;
+    @include just_between;
+    font-size: 20px;
+    padding: 70px 0;
+    .footer_info{
+      @include d_flex;
+      img{ 
+        width: 45px;
+      }
+      p{
+        font-weight: 600;
+        width: 200px;
+        margin-top: 2px;
+        margin: 0 40px 0 20px;
+      }
+    }
+    .footer_card{
+      //max-width: 150px;
+      h3{
+        height: 50px;
+        margin-top: 0;
+      }
+      ul{
+        padding-left: 0px;
+        width: 150px;
+        li{
+          padding-bottom: 15px;
+          a{
+            color: black;
+            &:hover{
+              color: $color_blue;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  }
+  .change_style{
+    color: $color_blue;
+    font-size: smaller;
+    font-weight: 900;
+  }
+}
