@@ -21,14 +21,23 @@ a {
   font-size: 22px;
 }
 
-@media screen and (min-width: 998px) {
-  .mobile-menu {
-    display: none;
-  }
-}
 @media screen and (max-width: 997px) {
   .nav_right {
     visibility: hidden;
+  }
+
+  #jumbotron .container {
+    flex-direction: column;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 10%;
+  }
+}
+@media screen and (min-width: 998px) {
+  .mobile-menu {
+    display: none;
   }
 }
 header .container {
@@ -93,7 +102,7 @@ header .mobile-menu .menu-icon {
   height: inherit;
 }
 #jumbotron .container .jumbo_text h1 {
-  margin: 70px 0 10px 0;
+  margin: 100px 0 10px 0;
 }
 #jumbotron .container .jumbo_text p {
   margin: 5px 0;
@@ -138,5 +147,54 @@ header .mobile-menu .menu-icon {
 }
 #jumbotron .container .jumbo_img img {
   width: 100%;
+  margin-top: 100px;
+}
+
+#process, #solution {
+  height: 150vh;
+  background-color: #FFE7D2;
+}
+#process .container, #solution .container {
+  margin: 0 10%;
+  padding: 0 0 140px 0;
+}
+#process .container .row1 h2, #process .container .row4 h2, #solution .container .row1 h2, #solution .container .row4 h2 {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+  font-size: 30px;
+  padding-top: 80px;
+}
+#process .container .row2, #solution .container .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+#process .container .row2 div, #solution .container .row2 div {
+  position: relative;
   margin-top: 70px;
+}
+#process .container .row2 div img, #solution .container .row2 div img {
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#process .container .row2 div .img_smaller, #solution .container .row2 div .img_smaller {
+  width: -webkit-fill-available;
+}
+#process .container .row2 div p, #solution .container .row2 div p {
+  margin-top: 180px;
+  text-align: center;
+}
+#process .container .row3, #solution .container .row3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+#process .container .row3 img, #solution .container .row3 img {
+  height: 300px;
+}
+#process .border_bottom, #solution .border_bottom {
+  border-bottom: 2px solid rgba(170, 170, 170, 0.5);
 }

@@ -7,6 +7,9 @@
 @mixin just_between{
   justify-content: space-between;
 }
+@mixin just_center{
+  justify-content: center;
+}
 @mixin reset{
   margin: 0;
   padding: 0;
@@ -39,18 +42,37 @@ a{
 }
 
 // media query
-@media screen and (min-width: 998px){
-  .mobile-menu {
-    display: none;
-  }
-  
-}
 @media screen and (max-width: 997px){
-  header{
-    
-  }
+  //section jumbotron
   .nav_right{
     visibility: hidden;
   }
-  
+  //section process
+  #jumbotron{
+    .container{
+      flex-direction: column;
+      text-align: center;
+      width: max-content;
+      margin: 0 10%;
+      
+    }
+  }
+}
+
+@media screen and (min-width: 998px){
+  //section jumbotron
+  .mobile-menu {
+    display: none;
+  }
+  //section process
+  // #jumbotron{
+  //   .container{
+  //     .jumbo_text{
+  //       width: 50%;
+  //     }
+  //     .jumbo_img{
+  //       width: 50%;
+  //     }
+  //   }
+  // }
 }
