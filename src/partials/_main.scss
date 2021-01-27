@@ -13,7 +13,7 @@
       p{
         margin: 5px 0;
       }
-      .jumbo_btns{
+      .btns{
         @include d_flex;
         @include align_center;
         margin: 60px 0 30px 0;
@@ -144,4 +144,66 @@
 }
 #survey, #praise{
   flex-direction: row-reverse;
+}
+// section Get started
+#get_started{
+  margin-top: 100px;
+  padding-bottom: 60px;
+  background-color: $color_pink;
+  @include d_flex;
+  flex-direction: column;
+  align-items: center;
+  .text_box{
+    position: relative;
+    width: 36%;
+    border: 1px solid $color_blue;
+    border-radius: 10px;
+    padding: 10px 25px 25px 25px;
+    background-color: white;
+    .founders_container{
+      @include d_flex;
+      img{
+        width: 60px;
+        margin-right: 20px
+      }
+      .founders{
+        line-height: 100%;
+        margin: auto 0;
+      }
+    }
+  }
+  .change_color{
+    color: $color_blue;
+  }
+  .quote_icon{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 35px;
+    color: $color_blue;
+  }
+  .btns{
+        @include d_flex;
+        @include align_center;
+        margin: 60px 0 30px 0;
+        button{
+          @include d_flex;
+          @include align_center;
+          @include btn;
+          background-color: $color_blue;
+          padding: 5px 10px;
+          color: white;
+          &:hover{
+            background-color: white;
+            color: $color_blue;
+          }
+          img{
+            width: 25px;
+            margin-right: 5px;
+          }
+        }
+        span{
+          margin: 0 5px;
+        }
+      }
 }

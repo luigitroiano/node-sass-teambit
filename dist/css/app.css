@@ -107,12 +107,12 @@ header .mobile-menu .menu-icon {
 #jumbotron .container .jumbo_text p {
   margin: 5px 0;
 }
-#jumbotron .container .jumbo_text .jumbo_btns {
+#jumbotron .container .jumbo_text .btns {
   display: flex;
   align-items: center;
   margin: 60px 0 30px 0;
 }
-#jumbotron .container .jumbo_text .jumbo_btns button {
+#jumbotron .container .jumbo_text .btns button {
   display: flex;
   align-items: center;
   color: #2C4792;
@@ -123,15 +123,15 @@ header .mobile-menu .menu-icon {
   padding: 5px 10px;
   color: white;
 }
-#jumbotron .container .jumbo_text .jumbo_btns button:hover {
+#jumbotron .container .jumbo_text .btns button:hover {
   background-color: white;
   color: #2C4792;
 }
-#jumbotron .container .jumbo_text .jumbo_btns button img {
+#jumbotron .container .jumbo_text .btns button img {
   width: 25px;
   margin-right: 5px;
 }
-#jumbotron .container .jumbo_text .jumbo_btns span {
+#jumbotron .container .jumbo_text .btns span {
   margin: 0 5px;
 }
 #jumbotron .container .jumbo_text .email a {
@@ -232,4 +232,69 @@ header .mobile-menu .menu-icon {
 
 #survey, #praise {
   flex-direction: row-reverse;
+}
+
+#get_started {
+  margin-top: 100px;
+  padding-bottom: 60px;
+  background-color: #FFE7D2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#get_started .text_box {
+  position: relative;
+  width: 36%;
+  border: 1px solid #2C4792;
+  border-radius: 10px;
+  padding: 10px 25px 25px 25px;
+  background-color: white;
+}
+#get_started .text_box .founders_container {
+  display: flex;
+}
+#get_started .text_box .founders_container img {
+  width: 60px;
+  margin-right: 20px;
+}
+#get_started .text_box .founders_container .founders {
+  line-height: 100%;
+  margin: auto 0;
+}
+#get_started .change_color {
+  color: #2C4792;
+}
+#get_started .quote_icon {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 35px;
+  color: #2C4792;
+}
+#get_started .btns {
+  display: flex;
+  align-items: center;
+  margin: 60px 0 30px 0;
+}
+#get_started .btns button {
+  display: flex;
+  align-items: center;
+  color: #2C4792;
+  font-weight: 600;
+  border: 1px solid #2C4792;
+  border-radius: 5px;
+  background-color: #2C4792;
+  padding: 5px 10px;
+  color: white;
+}
+#get_started .btns button:hover {
+  background-color: white;
+  color: #2C4792;
+}
+#get_started .btns button img {
+  width: 25px;
+  margin-right: 5px;
+}
+#get_started .btns span {
+  margin: 0 5px;
 }
